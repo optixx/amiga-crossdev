@@ -78,16 +78,16 @@ VBlankInterrupt:
 
 
 
-    section data,data_c           ;  keep data & code seperate!
+    section data,data_c             ; keep data & code seperate!
 
 copperlist:
-    dc.w    $100,$0200      ; otherwise no display!
+    dc.w    $100,$0200              ; otherwise no display!
     dc.w    $180,$fff
-    dc.w    $8107,$fffe     ; wait for $8107,$fffe
+    dc.w    $8107,$fffe             ; wait for $8107,$fffe
     dc.w    $180
-    dc.w    $f0f            ; background red
-    dc.w    $d607,$fffe     ; wait for $d607,$fffe
-    dc.w    $180,$ff0       ; background yellow
+    dc.w    $f0f                    ; background red
+    dc.w    $d607,$fffe             ; wait for $d607,$fffe
+    dc.w    $180,$ff0               ; background yellow
     dc.w    $ffff,$fffe
     dc.w    $ffff,$fffe
 
